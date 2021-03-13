@@ -1,14 +1,32 @@
 #navigation{
     background-image: url(/download\ \(2\).jpeg);
     background-repeat: no-repeat;
-    height:auto;
-    width: auto;
+    height:95px;
+    padding: 20px;
+    background-position: center;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+    display: block;
 }
 h1{
 text-align: center
 }
 body{
-    padding-left: 23%;
-
+    text-align: center;
+    align-items: baseline;
+    font-weight: arial, serif,
+}
+ul{
+    list-style: none;
+}
+ol{
+    list-style: none;
+}
+.top-grid{
+    margin: auto;
+    background:rgb(157, 236, 122)
 }
 
