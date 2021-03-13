@@ -29,4 +29,16 @@ ol{
     margin: auto;
     background:rgb(157, 236, 122)
 }
-
+button:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+label:hover{
+    background-color: lightpink;
+}
+input:hover{
+    background-color: darkgrey;
+}
+a:hover{
+    background-color: darkorange;
+}
