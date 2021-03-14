@@ -42,3 +42,6 @@ input:hover{
 a:hover{
     background-color: darkorange;
 }
+h1:hover{
+    background-color: darkred;
+}
