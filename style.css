@@ -1,9 +1,15 @@
+
+body{
+    margin:0;
+    padding:0;
+}
 #navigation{
-    background-image: url(/download\ \(2\).jpeg);
+    background-image: url(/img/download\ \(2\).jpeg);
     background-repeat: no-repeat;
-    height:95px;
+    height:150px;
     padding: 20px;
     background-position: center;
+    ;
 }
 *{
     box-sizing: border-box;
@@ -26,8 +32,16 @@ ol{
     list-style: none;
 }
 .top-grid{
-    margin: auto;
-    background:rgb(157, 236, 122)
+    margin: 80 20 50 100px;
+    background:rgb(157, 236, 122);
+    height:95px;
+
+}
+.top-grid >ul>li{
+    float:right;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
 }
 button:hover{
     background-color: lightgreen;
@@ -44,4 +58,27 @@ a:hover{
 }
 h1:hover{
     background-color: darkred;
+}
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight:800px;
+}
+td {
+    padding: 5px;
+    margin:auto;
+}
+
+th,td {
+    text-align: center;
+}
+.layout{
+    width:50%;
+    align-items: center;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
 }
