@@ -11,12 +11,7 @@ body{
     background-position: center;
     ;
 }
-*{
-    box-sizing: border-box;
-}
-div{
-    display: block;
-}
+
 h1{
 text-align: center
 }
@@ -59,19 +54,14 @@ a:hover{
 h1:hover{
     background-color: darkred;
 }
-table,th,td {
+table,th{
     border: 1px solid black;
     border-collapse: collapse;
 }
-
-th{
-    font-weight:800px;
+table{
+    flex-direction: column;
+    content: none;
 }
-td {
-    padding: 5px;
-    margin:auto;
-}
-
 th,td {
     text-align: center;
 }
