@@ -65,10 +65,3 @@ table{
 th,td {
     text-align: center;
 }
-.layout{
-    width:50%;
-    align-items: center;
-    table-layout: fixed;
-    margin-left: auto;
-    margin-right: auto;
-}
