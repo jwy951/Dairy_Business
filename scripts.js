@@ -19,12 +19,13 @@ var sheds = [
       cows: 52,
       litrePerCow: 11,
     }];
+    document.getElementById("A, B, C, D").Value
     // function 
   function totalProductionPerShed(){
     for (var i=0; i<sheds.length ; i++) {
         var perShed;
         perShed= sheds[i].cows * sheds[i].litrePerCow;
-        console.log("My production in Shed " + sheds[i].name +" " + perShed +" litres per shed");
+        var display =Document.getElementById("display")
         sheds[i].totalLitres = perShed;
     }
   }
@@ -32,8 +33,8 @@ var sheds = [
   totalProductionPerShed();
   function overallProducton() {
     sum = sheds[0].totalLitres + sheds[1].totalLitres + sheds[2].totalLitres + sheds[3].totalLitres;
-    console.log("My total production is " + " " + sum + " litres per day.");
-    return sum;
+    var display =Document.getElementById("display")
+     display.innerHTML = "<p>Please <span class='fill'>FILL</span> all the fields</p>"
   }
   //overal production
   overallProducton();
@@ -47,7 +48,7 @@ var sheds = [
     var daymonth= [ 31,29,31,30,31,30,31,31,30,31,30,31];
     for (i = 0; i<months.length; i++){
       sum = daymonth[i] * incomePerDay;
-    console.log('My income for ' + months[i] +  ' is  Ksh' + sum)
+     display.innerHTML = "<p>Please <span class='fill'>FILL</span> all the fields</p>"
     }
   
   
