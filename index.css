@@ -1,0 +1,16 @@
+h1{
+    background-image: url("/img/download\ \(2\).jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #7eca9c;
+    height: 170px;
+    text-align: center;
+    color:brown;
+}
+#container{
+    background-color:#7eca9c;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: brown;
+}

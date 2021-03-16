@@ -1,53 +1,40 @@
-var sheds = [
-    {
-      name:"A",
-      cows: 34,
-      litrePerCow: 15,
-    },
-    {
-      name:"B",
-      cows: 11,
-      litrePerCow: 28,
-    },
-    {
-      name:"C",
-      cows: 27,
-      litrePerCow:18,
-    },
-    {
-      name:"D",
-      cows: 52,
-      litrePerCow: 11,
-    }];
-    // function 
-  function totalProductionPerShed(){
-    for (var i=0; i<sheds.length ; i++) {
-        var perShed;
-        perShed= sheds[i].cows * sheds[i].litrePerCow;
-        console.log("My production in Shed " + sheds[i].name +" " + perShed +" litres per shed");
-        sheds[i].totalLitres = perShed;
+function production() {
+    var shed_A =(document.getElementById("shed_A").value);
+    var shed_B =(document.getElementById("shed_B").value);
+    var shed_C =(document.getElementById("shed_C").value);
+    var shed_D =(document.getElementById("shed_D").value);
+        shed_A = parseFloat(shed_A);
+        shed_B = parseFloat(shed_B);
+        shed_C = parseFloat(shed_C);
+        shed_D = parseFloat(shed_D);
+        var total=shed_A+shed_B+shed_C+shed_D;
+        document.getElementById("shed_a").innerHTML=shed_A;
+        document.getElementById("shed_b").innerHTML=shed_B;
+        document.getElementById("shed_c").innerHTML=shed_C;
+        document.getElementById("shed_d").innerHTML=shed_D;
+        document.getElementById("total").innerHTML = total;
     }
-  }
-  // total production ber shed
-  totalProductionPerShed();
-  function overallProducton() {
-    sum = sheds[0].totalLitres + sheds[1].totalLitres + sheds[2].totalLitres + sheds[3].totalLitres;
-    console.log("My total production is " + " " + sum + " litres per day.");
-    return sum;
-  }
-  //overal production
-  overallProducton();
-    incomePerDay = overallProducton() * 45;
-    incomePerWeek = incomePerDay * 7;
-    incomePerYear = incomePerDay * 366;
-    console.log("My daily income will be Ksh " + incomePerDay);
-    console.log("My weekly income will be Ksh " + incomePerWeek);
-    console.log("My yearly income will be Ksh " + incomePerYear);
+    function evaluation(){
+     var rate=(document.getElementById("buying_rate").value);
+     var allmilk=(document.getElementById("totalmilk").value);
+     
+       rate =parseFloat(rate);
+       allmilk =parseFloat(allmilk);
+      var weekly=rate*allmilk*7;
+      var monthly=rate*allmilk*30;
+      var yearly=rate*allmilk*365;
+      document.getElementById("weekly").innerHTML=weekly;
+      document.getElementById("monthly").innerHTML=monthly;
+      document.getElementById("yearly").innerHTML=yearly;
+    }
+   function annual(){
+    var whole=(document.getElementById("milk").value);
+      whole =parseFloat(whole);
+      var dailyincome=whole*45;
     var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var daymonth= [ 31,29,31,30,31,30,31,31,30,31,30,31];
+    var days= [ 31,29,31,30,31,30,31,31,30,31,30,31];
     for (i = 0; i<months.length; i++){
-      sum = daymonth[i] * incomePerDay;
-    console.log('My income for ' + months[i] +  ' is  Ksh' + sum)
+      result = days[i] * dailyincome;
+      document.getElementById("year").innerHTML+=("Your income for " + months[i] +  "is  Ksh  " + result + "</p>");
     }
-  
-  
+   }

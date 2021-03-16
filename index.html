@@ -4,66 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Dairy farm</title>
+    <link rel="stylesheet" href="index.css"
+    <title>Document</title>
 </head>
-
 <body>
-   
-    <div class="top-grid">
-      <h1>JOWIYE DAIRY FARM</h1></p>
-		<ul>
-			<li><a href="https://jowiye.co.ke:2096/"></a></li>	
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contacts</a></li>
-		</ul>
-		
-	</div>
-    <nav id="navigation">
-    </nav>
-    <h2>About JOWIYE Dairy Farm</h2>
-    <p>Dairy farming involves breeding cows, milking them, a
-        nd selling the milk. Dairy cattle farming is a very profitable</p>business, and many people are making money all over the world by 
-        <p>starting dairy milk farming businesses. However, to build a successful, 
-        sustainable milk dairy farming business, </p><p>you require sufficient knowledge 
-        of how to efficiently keep the milk cows, good management skills.
-         and a good dairy farming business plan.</p><a href="links">read more</a>
-    
-    <!--listed Breeds-->
-    <div>
-        <div id="Breeds">
-            <h2>BREEDS IN OUR SHED</h1>
-            <h2>Holstein</h2>
-            <img width=150px height=100px src="img/HOLSTEIN-COW.jpg" alt="Holstein">
-            <p><b>Characteristics:</b> Holstein cows are large in size, weighing about 1,500 pounds in maturity.</p>
-            <p><b>History:</b> The Holstein cow originated from the Netherlands, and was first imported to Kenya in the early 1900s.</p>
-            
-            <h2>Jersey</h2>
-            <img width=150px height=100px src="img/JERSEY-COW.jpg" alt="Jersey">
-            <p><b>Characteristics:</b> These are the types of cows which are typically light to medium brown in color,</p>
-            <p>though this can range from being almost grey to dull black. She is small in size, weighing about 1,000 pounds in </p>
-            <p>maturity. She has a broad face with prominent eyes and long eyelashes which endears this breed to many people.</p>
-            <p><b>History:</b>The Jersey cow originated from the Island of Jersey, a small British Island in the English Channel.</p>
-            
-            <h2>Guernnsey</h2>
-            <img width=150px height=100px src="img/AYRSHIRE.jpg" alt="Jersey">
-            <p><b>Characteristics:</b> The Guernsey types of cows are brown or fawn with white spots of various sizes on the body or face.</p>
-            <p>She is medium in size, weighing about 1,200 pounds in maturity.</p>
-            <p><b>History:</b> The Guernsey originated from the Isle of Guernsey, a tiny island in the English Channel.</p>
-        </div>
-    </div>
-    <!--management section with their images-->
-    <h1>Management</h1>
-    <ol>
-        <h2>Managers</h2>
-        <li>Yegon Johnstone</li>
-        <img width=50px height=70px src="img/Yegon.jpeg" alt="" sizes="" srcset="">
-        <li>Brian Kipkoech </li>
-        <img width="50" height="70" src="img/Brian.jpeg" alt="" sizes="" srcset="">
-    </ol>
+    <h1>JOWIYE DAIRY FARM</h1>
+    <script src="index.js"></script>
     <div id="container"> 
-
         <div id="farmname">
             <h4 class="e1">CALCULATION AS PER PRODUCTION</h4>
         </div>
@@ -71,15 +18,16 @@
         <h3 class="my-user">Inputs:</h3>
         <p class="">Production per cow, in every shed.</p>
         <div class="">
+          <form action="">
             <div class="shed">
                 <span class="" id="inPutShade">Cows in Shed A</span>
                 <input id="shed_A" type="text"placeholder="0.00 Ltrs." >
             </div>
-            <div class="">
+            <div class="bb">
                 <span class="shed" id="inPutShade">Cows in Shed B </span>
                 <input id="shed_B" type="text" placeholder="0.00 Ltrs.">
             </div>
-            <div class="lea">
+            <div class="bb">
                 <span class="shed" id="inPutShade">Cows in Shed C</span>
                 <input id="shed_C" type="text" placeholder="0.00 Ltrs">
             </div>
@@ -87,103 +35,69 @@
                 <span class="shed" id="inPutShade">Cows in Shed D.</span>
                 <input id="shed_D" type="text" placeholder="0.00 Ltrs">
             </div>
+            <input type="button" onClick="production()" Value="Calculate" />
+          </form>
+            
           </div>
 
-          <p>Buying rates and days</p>
-          <div class="">
-            <div class="shed">
-                <span class="jowiye" id="inPutShade">Buying Rate</span>
-                <input id="buying_rate" type="text" placeholder="0.00 shs.">
-            </div>
-            <div class="">
-                <span class="shed" id="inPutShade">Duration in days</span>
-                <input id="time" type="text" placeholder="0.00 days.">
-            </div>
-          </div>
+          <h2 class="Daily"> Daily Earnings</h2>
+              Your production in Shed A is <span id="shed_a"></span> litres per day <br>
+
+              Your production in Shed B is <span id="shed_b"></span> litres per day <br>
+
+              Your production in Shed C is <span id="shed_c"></span> litres per day <br>
           
-          <button class="jwy" type="submit" onclick="totalProduction()">Calculate</button>
-
-
-          <h2 class="dryAn"> Daily Earnings</h2>
-          <table id="table1">
-            <thead id="th">
-              <tr>
-                <th ></th>
-                <th >Shed </th>
-                <th >Total daily Earnings </th>
-              </tr>
-            </thead>
-            <tbody id="tb">
-              <tr id="tr">
-                <th>A</th>
-                <td id="shed_a"></td>
-                <td id="shed_a_prod">0.00</td>
-              </tr>
-              <tr>
-                <th >B</th>
-                <td id="shed_b"></td>
-                <td id="shed_b_prod">0.00</td>
-              </tr>
-              <tr>
-                <th>C</th>
-                <td id="shed_c"></td>
-                <td id="shed_c_prod">0.00</td>
-              </tr>
-              <tr>
-                <th >D</th>
-                <td id="shed_d"></td>
-                <td id="shed_d_prod">0.00</td>
-              </tr>
-            </tbody>
-          </table>
-          <br><br><hr>
+              Your production in Shed D is <span id="shed_d"></span> litres per day <br>
+              The total production is <span id="total"></span> litres per day
+              
+              <p>Buying rates and days</p>
+              <div class="bb">
+                <form action="cal">
+                  <div class="shed">
+                    <span class="jowiye" id="inPutShade">Buying Rate</span>
+                    <input id="buying_rate" type="text" placeholder="0.00 shs.">
+                </div>
+                <div class="bb">
+                    <span class="shed" id="inPutShade">Total Days</span>
+                    <input id="totalmilk" type="text" placeholder="0.00 days.">
+                </div>
+        
+              <input type="button" onClick="evaluation()" Value="Calculate" />
+                </form>
+              </div>
+                     Your weekly income will be Ksh <span id = "weekly"></span> <br>
+                    Your monthly income will be Ksh <span id = "monthly"></span><br>
+                    Your yearly income will be Ksh <span id = "yearly"></span><br>
          <div class="">
-            <h2 class="cr">Seasonal Earnings</h2>
+            <h2 class="cr">monthly print <output></output></h2>
             <p class="" id="farm_earnings"></p>
          </div>
         
           <br><hr>
-          <h2 class="cr">Annual Report</h2>
+          <h2 class="cr">Yearly Print Out</h2>
+          <form action="">
+            Total Milk<input type="text" id="milk">
+            <input type="button" onClick="annual()" Value="Calculate" />
+          </form>
+          <span id="year"></span>
           <ul id="annual_report">
           </ul>
            <!-- document.getElementById('annual_report').innerHTML = `Total income for ${month} is: ${(days_in_months[month] * total_production) * buying_rate}`; -->
           <br><hr>
           <h2 class="cr">Comparison</h2>
           <div class="headers">
-              <u><h4>Report when buying rate is 45</h4></u>
-              <u><h4>Report when buying rate is 49.6</h4></u>
+              <u><h4>print out when buying rate is 45</h4></u>
+              <u><h4>Print out when buying rate is 49.6</h4></u>
           </div>
           <div class="cr" id="">
             <ul id="compare_report1">
-                Report for value 45 <br>
+                Print out for value 45 <br>
             </ul>
             <ul id="compare_report2">
-                Report for value 49.6 <br>
+                Print out for value 49.6 <br>
             </ul>
           </div>
 
     </div>
-
-
-
-</body>
-</html>
-
-    <h1>Forms</h1>
-    <form>
-        <label for="">Username</label>
-        <input type="text" id="user"/>
-        <label> Email </label>
-        <input type="email" />
-        <button type="summit">summit</button>
-    </form>
-    <footer>
-        <p>Created 2021 copyright</p>
-        <ul>
-            <li><a href="tiwter.com/">Twiter</a></a></li>
-            <li><a href="facebook.com">Facebook</a></li>
-        </ul>
-    </footer>
-     <scripts src="index.js"></scripts>
 </body>
 </html>
