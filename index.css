@@ -1,5 +1,5 @@
 h1{
-    background-image: url("/img/download.jpeg");
+    background-image: url(/img/download.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #7eca9c;
