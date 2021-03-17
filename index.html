@@ -35,7 +35,7 @@
                 <span class="shed" id="inPutShade">Cows in Shed D.</span>
                 <input id="shed_D" type="text" placeholder="0.00 Ltrs">
             </div>
-            <input type="button" onClick="production()" Value="Calculate" />
+            <input type="button" onClick="production()" Value="Generate" />
           </form>
             
           </div>
@@ -48,7 +48,7 @@
               Your production in Shed C is <span id="shed_c"></span> litres per day <br>
           
               Your production in Shed D is <span id="shed_d"></span> litres per day <br>
-              The total production is <span id="total"></span> litres per day
+              The total production in <span id="total"></span> litres per day
               
               <p>Buying rates and days</p>
               <div class="bb">
@@ -62,14 +62,14 @@
                     <input id="totalmilk" type="text" placeholder="0.00 days.">
                 </div>
         
-              <input type="button" onClick="evaluation()" Value="Calculate" />
+              <input type="button" onClick="evaluation()" Value="Generate" />
                 </form>
               </div>
                      Your weekly income will be Ksh <span id = "weekly"></span> <br>
                     Your monthly income will be Ksh <span id = "monthly"></span><br>
                     Your yearly income will be Ksh <span id = "yearly"></span><br>
          <div class="">
-            <h2 class="cr">monthly print <output></output></h2>
+            <h2 class="cr">Monthly print <output></output></h2>
             <p class="" id="farm_earnings"></p>
          </div>
         
@@ -77,7 +77,7 @@
           <h2 class="cr">Yearly Print Out</h2>
           <form action="">
             Total Milk<input type="text" id="milk">
-            <input type="button" onClick="annual()" Value="Calculate" />
+            <input type="button" onClick="annual()" Value="Generate" />
           </form>
           <span id="year"></span>
           <ul id="annual_report">
